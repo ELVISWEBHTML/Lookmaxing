@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>LookMaxx — Sua Rotina</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #f0f7ff;
+    color: #1a2a3a;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+  }
+
+  .container {
+    max-width: 580px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .badge {
+    display: inline-block;
+    background: #ddeeff;
+    color: #3a7bd5;
+    font-size: .68rem;
+    letter-spacing: .35em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 32px;
+  }
+
+  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3.5rem, 12vw, 6rem);
+    letter-spacing: .08em;
+    color: #2563b0;
+    line-height: 1;
+    margin-bottom: 24px;
+  }
+
+  .desc {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #4a6a8a;
+    font-weight: 300;
+    margin-bottom: 48px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 52px;
+    text-align: left;
+  }
+
+  .feature {
+    background: #fff;
+    border: 1px solid #d0e4f7;
+    border-radius: 10px;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .feature-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+
+  .feature-text strong {
+    display: block;
+    font-size: .95rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+    color: #1a2a3a;
+  }
+
+  .feature-text span {
+    font-size: .85rem;
+    color: #7a9ab8;
+    font-weight: 300;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 40px;
+    background: #2563b0;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: .18em;
+    transition: background .2s, transform .15s, box-shadow .2s;
+    box-shadow: 0 4px 24px rgba(37,99,176,.25);
+  }
+
+  .btn:hover {
+    background: #1d4f9a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(37,99,176,.35);
+  }
+
+  .btn:active { transform: translateY(0); }
+
+  footer {
+    margin-top: 60px;
+    font-size: .75rem;
+    color: #a0b8d0;
+    letter-spacing: .1em;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="badge">Lookmaxxing Saudável</div>
+
+  <h1>SUA ROTINA</h1>
+
+  <p class="desc">
+    Este site é o seu espaço para montar e acompanhar sua rotina de lookmaxxing — simples, saudável e no seu ritmo.
+  </p>
+
+  <div class="features">
+    <div class="feature">
+      <span class="feature-icon">📋</span>
+      <div class="feature-text">
+        <strong>Crie sua rotina diária</strong>
+        <span>Manhã, tarde e noite — tudo organizado por você</span>
+      </div>
+    </div>
+    <div class="feature">
+      <span class="feature-icon">📈</span>
+      <div class="feature-text">
+        <strong>Acompanhe seu progresso</strong>
+        <span>Veja sua evolução dia após dia</span>
+      </div>
+    </div>
+    <div class="feature">
+      <span class="feature-icon">✅</span>
+      <div class="feature-text">
+        <strong>Marque o que já fez</strong>
+        <span>Sono, skincare, treino, hidratação</span>
+      </div>
+    </div>
+  </div>
+
+  <a href="./progresso.html" class="btn">
+    COMEÇE AGORA NA SUA ROTINA LOOKMAXXING →
+  </a>
+
+  <footer>Sem dor. Sem riscos. Só consistência.</footer>
+
+</div>
+  
+</body>
+  </html>
