@@ -849,8 +849,21 @@ function toggleBg(){
 ══════════════════════════════════════ */
 render();
 </script>
+   
 <script>
-javascript:(function(){if(document.getElementById('_vpBtn'))return;var s=document.createElement('style');s.textContent='@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");#_vpBtn{position:fixed;top:16px;right:16px;z-index:999999;font-family:"Bebas Neue",sans-serif;font-size:.95rem;letter-spacing:.18em;color:#ffc800;background:linear-gradient(135deg,#1a1400,#0d0d0d,#1a0a00);border:1.5px solid #ffc800;border-radius:4px;padding:8px 16px;cursor:pointer;text-decoration:none;display:flex;align-items:center;gap:7px;box-shadow:0 0 14px rgba(255,200,0,.2),inset 0 1px 0 rgba(255,255,255,.04);overflow:hidden;animation:_vpPulse 2s ease-in-out infinite;transition:transform .15s;}@keyframes _vpPulse{0%,100%{box-shadow:0 0 14px rgba(255,200,0,.2);}50%{box-shadow:0 0 28px rgba(255,200,0,.5),0 0 50px rgba(255,100,0,.15);}}#_vpBtn::before{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,220,60,.2),transparent);animation:_vpShimmer 3s ease-in-out infinite;}@keyframes _vpShimmer{0%{left:-120%;}60%{left:160%;}100%{left:160%;}}#_vpBtn:hover{transform:scale(1.06);}#_vpBtn:active{transform:scale(.96);}';document.head.appendChild(s);var b=document.createElement('a');b.id='_vpBtn';b.href='./progresso.html';b.innerHTML='⚡ VER PROGRESSO';document.body.appendChild(b);})();
-<script/>
+setTimeout(function(){
+  if(document.getElementById('_vpBtn'))return;
+  var s=document.createElement('style');
+  s.textContent='@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");#_vpBtn{position:fixed;top:16px;right:16px;z-index:999999;font-family:"Bebas Neue",sans-serif;font-size:.95rem;letter-spacing:.18em;color:#ffc800;background:linear-gradient(135deg,#1a1400,#0d0d0d,#1a0a00);border:1.5px solid #ffc800;border-radius:4px;padding:8px 16px;cursor:pointer;text-decoration:none;display:flex;align-items:center;gap:7px;box-shadow:0 0 14px rgba(255,200,0,.2),inset 0 1px 0 rgba(255,255,255,.04);overflow:hidden;opacity:0;transition:opacity .6s ease,transform .15s;animation:_vpPulse 2s ease-in-out infinite;}@keyframes _vpPulse{0%,100%{box-shadow:0 0 14px rgba(255,200,0,.2);}50%{box-shadow:0 0 28px rgba(255,200,0,.5),0 0 50px rgba(255,100,0,.15);}}#_vpBtn::before{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,220,60,.2),transparent);animation:_vpShimmer 3s ease-in-out infinite;}@keyframes _vpShimmer{0%{left:-120%;}60%{left:160%;}100%{left:160%;}}#_vpBtn:hover{transform:scale(1.06);}#_vpBtn:active{transform:scale(.96);}';
+  document.head.appendChild(s);
+  var b=document.createElement('a');
+  b.id='_vpBtn';
+  b.href='./progresso.html';
+  b.innerHTML='⚡ VER PROGRESSO';
+  document.body.appendChild(b);
+  setTimeout(function(){ b.style.opacity='1'; }, 50);
+}, 4000);
+</script>
+   
 </body>
 </html>
